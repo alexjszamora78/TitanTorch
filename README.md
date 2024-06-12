@@ -157,6 +157,10 @@ Los responses son un conjunto de respuestas que el modelo puede usar para retona
 
 ```python
 	from TitanTorch import ChatBot
-	
+
 	response = ChatBot("config.json")
+```
+
+```
+![Output](resources/output.png)
 ```
