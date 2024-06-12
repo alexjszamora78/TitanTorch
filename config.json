@@ -1,0 +1,400 @@
+[
+    {
+      "tag": "saludo",
+      "patterns": [
+        "Hola",
+        "Buenos días",
+        "¿Cómo estás?"
+      ],
+      "responses": [
+        "¡Hola! ¿En qué puedo ayudarte hoy?",
+        "¡Buenos días! ¿Cómo puedo asistirte?",
+        "Estoy aquí para ayudarte. ¿En qué puedo colaborar contigo?"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "Adiós",
+        "Hasta luego",
+        "Nos vemos luego"
+      ],
+      "responses": [
+        "¡Adiós! Que tengas un buen día.",
+        "¡Hasta luego! No dudes en volver si necesitas ayuda.",
+        "Nos vemos pronto. ¡Cuídate!"
+      ]
+    },
+    {
+      "tag": "ayuda",
+      "patterns": [
+        "Necesito ayuda",
+        "Puedes ayudarme",
+        "Quiero que me ayudes",
+        "¿Podrías ayudarme?",
+        "¿Podrías aconsejarme?",
+        "¿Podrías darme un aconsejo?",
+        "Dame un consejo"
+      ],
+      "responses": [
+        "¡Claro! ¿Qué ocurre?",
+        "¡Sí, por supuesto! ¿Pasa algo?",
+        "¡Sí! ¿Te sientes mal?",
+        "¡Sí! Cuentame por favor, estoy para ayudarte.",
+        "¡Por supuesto! ¿En qué puedo ayudarte?",
+        "¡Por supuesto! Cuentame tu situación, por favor.",
+        "¡Por supuesto! Estoy para ayudarte, cuéntame sobre tu situación.",
+        "¡Por supuesto! Dime como te sientes y qué podría ayudarte."
+      ]
+    },  
+    {
+      "tag": "definicion_burnout",
+      "patterns": [
+          "¿Qué es el burnout?",
+          "¿Cómo puedo reconocer si estoy experimentando burnout?",
+          "Señales de burnout"
+      ],
+      "responses": [
+          "El burnout es un estado de agotamiento físico, emocional y mental causado por el estrés crónico en el trabajo.",
+          "Algunas señales de burnout incluyen el agotamiento constante, la falta de motivación, la irritabilidad, el aislamiento social y la disminución del rendimiento laboral.",
+          "Si te sientes abrumado, desmotivado y agotado física y emocionalmente, es posible que estés experimentando burnout. Es importante buscar apoyo y tomar medidas para cuidar tu bienestar."
+      ]
+    },
+    {
+      "tag": "ansiedad",
+      "patterns": [
+        "Siento que no puedo concentrarme en el trabajo.",
+        "Estoy constantemente preocupado por mi desempeño laboral.",
+        "Me cuesta trabajo relajarme después de un día de trabajo intenso."
+      ],
+      "responses": [
+        "Prueba técnicas de respiración profunda para reducir la ansiedad.",
+        "Haz pausas cortas durante el día para desconectar y relajarte.",
+        "Habla con tu supervisor sobre cómo te sientes, podría ofrecerte apoyo adicional."
+      ]
+    },
+    {
+      "tag": "depresion",
+      "patterns": [
+        "Me siento mal",
+        "No me siento del todo bien",
+        "Siento que mi trabajo no tiene sentido o propósito.",
+        "No tengo energía para enfrentar mis responsabilidades laborales.",
+        "Me siento abrumado y sin esperanza en mi trabajo."
+      ],
+      "responses": [
+        "Considera hablar con un terapeuta o consejero para obtener apoyo emocional.",
+        "Busca actividades que disfrutes fuera del trabajo para mejorar tu estado de ánimo.",
+        "Habla con recursos humanos sobre la posibilidad de ajustar tu carga de trabajo si te sientes abrumado."
+      ]
+    },
+    {
+      "tag": "estres",
+      "patterns": [
+        "Me siento constantemente tenso y nervioso en el trabajo.",
+        "Tengo dificultades para conciliar el sueño debido al estrés laboral.",
+        "Siento que tengo demasiadas tareas y plazos para cumplir."
+      ],
+      "responses": [
+        "Haz ejercicio regularmente para liberar tensiones y reducir el estrés.",
+        "Practica técnicas de manejo del tiempo para priorizar tareas y evitar la sobrecarga.",
+        "Considera hablar con tu supervisor sobre la redistribución de tareas si te sientes abrumado."
+      ]
+    },
+    {
+      "tag": "angustia",
+      "patterns": [
+        "Siento un nudo en el estómago cada vez que pienso en ir al trabajo.",
+        "Me siento atrapado en un ciclo de preocupación constante por el trabajo.",
+        "Tengo ataques de pánico antes de ir al trabajo."
+      ],
+      "responses": [
+        "Habla con un profesional de la salud mental para obtener ayuda con la gestión de la angustia.",
+        "Practica la meditación o el yoga para calmar tu mente y cuerpo.",
+        "Explora opciones laborales alternativas si sientes que tu entorno actual contribuye a tu angustia."
+      ]
+    },
+    {
+      "tag": "cansancio",
+      "patterns": [
+        "Me siento agotado incluso después de una noche de sueño.",
+        "No tengo energía para realizar actividades fuera del trabajo.",
+        "Siento que mi trabajo consume toda mi energía."
+      ],
+      "responses": [
+        "Prioriza el descanso adecuado y establece límites para evitar el agotamiento.",
+        "Busca actividades recreativas que te ayuden a recargar energías fuera del trabajo.",
+        "Considera hablar con tu supervisor sobre la posibilidad de tomar días libres para descansar y recuperarte."
+      ]
+    },
+    {
+      "tag": "inquietudes",
+      "patterns": [
+        "Me preocupa constantemente perder mi trabajo.",
+        "Tengo miedo de no cumplir con las expectativas de mi jefe.",
+        "Me preocupa el futuro de mi carrera profesional."
+      ],
+      "responses": [
+        "Habla con tu supervisor para aclarar expectativas y recibir retroalimentación sobre tu desempeño.",
+        "Actualiza tu currículum y comienza a buscar oportunidades laborales alternativas si te sientes estancado.",
+        "Busca recursos de desarrollo profesional para mejorar tus habilidades y aumentar tu confianza en el trabajo."
+      ]
+    },
+    {
+      "tag": "adiccion_al_trabajo",
+      "patterns": [
+        "Siento que nunca puedo desconectar del trabajo.",
+        "Trabajo horas extras regularmente sin recibir compensación adicional.",
+        "Me siento culpable cuando no estoy trabajando, incluso en mi tiempo libre."
+      ],
+      "responses": [
+        "Establece límites claros entre el trabajo y la vida personal para evitar la adicción laboral.",
+        "Busca actividades fuera del trabajo que te apasionen y te ayuden a desconectar.",
+        "Habla con un terapeuta o consejero sobre cómo establecer límites saludables en tu relación con el trabajo."
+      ]
+    },
+    {
+      "tag": "soluciones",
+      "patterns": [
+        "¿Qué puedo hacer para reducir mi estrés laboral?",
+        "¿Cómo puedo mejorar mi bienestar en el trabajo?",
+        "¿Qué pasos puedo tomar para prevenir el burnout?"
+      ],
+      "responses": [
+        "Prioriza el autocuidado, incluyendo el ejercicio regular, una dieta saludable y suficiente descanso.",
+        "Establece límites claros entre el trabajo y la vida personal para evitar el agotamiento.",
+        "Busca apoyo de amigos, familiares o un terapeuta para hablar sobre tus preocupaciones laborales y emocionales."
+      ]
+    },
+    {
+      "tag": "relaciones_laborales",
+      "patterns": [
+        "Tengo conflictos constantes con mis compañeros de trabajo.",
+        "No me siento apoyado por mi equipo en el trabajo.",
+        "Siento que no puedo comunicarme efectivamente con mis colegas."
+      ],
+      "responses": [
+        "Intenta resolver conflictos de manera constructiva a través de la comunicación abierta y la empatía.",
+        "Busca oportunidades para construir relaciones más sólidas con tus compañeros de trabajo.",
+        "Habla con tu supervisor o recursos humanos si enfrentas problemas persistentes en tus relaciones laborales."
+      ]
+    },
+    {
+      "tag": "sobrecarga_de_trabajo",
+      "patterns": [
+        "Me asignan más tareas de las que puedo manejar.",
+        "Constantemente estoy trabajando en múltiples proyectos simultáneamente.",
+        "No tengo tiempo para tomar descansos durante el día de trabajo."
+      ],
+      "responses": [
+        "Habla con tu supervisor sobre la posibilidad de redistribuir la carga de trabajo.",
+        "Prioriza tareas y establece plazos realistas para evitar la sobrecarga.",
+        "Considera delegar tareas cuando sea posible y pedir ayuda cuando la necesites."
+      ]
+    },
+    {
+      "tag": "ambiente_laboral_toxico",
+      "patterns": [
+        "Me siento constantemente estresado debido al ambiente laboral negativo.",
+        "Siento que no puedo ser yo mismo en el trabajo debido a la atmósfera tóxica.",
+        "Las interacciones con mis colegas o superiores me hacen sentir ansioso o deprimido."
+      ],
+      "responses": [
+        "Busca apoyo de recursos humanos o un supervisor de confianza para abordar problemas de ambiente laboral.",
+        "Considera buscar oportunidades laborales en entornos más positivos y saludables.",
+        "Cultiva relaciones fuera del trabajo que te brinden apoyo emocional y un sentido de comunidad."
+      ]
+    },
+    {
+        "tag": "comunicacion_inefectiva",
+        "patterns": [
+          "Tengo dificultades para comunicarme claramente con mi equipo de trabajo.",
+          "Siento que no se me escucha o se me comprende en el trabajo.",
+          "Las malas comunicaciones en el trabajo causan confusión y estrés."
+        ],
+        "responses": [
+          "Practica la escucha activa y asegúrate de entender las necesidades y preocupaciones de tus colegas.",
+          "Utiliza herramientas de comunicación efectiva, como reuniones regulares o correos electrónicos claros y concisos.",
+          "Aborda cualquier malentendido o conflicto de comunicación de manera directa y respetuosa."
+        ]
+      },
+      {
+        "tag": "desarrollo_profesional",
+        "patterns": [
+          "Quiero avanzar en mi carrera pero no sé cómo.",
+          "Me siento estancado en mi puesto de trabajo actual.",
+          "Quiero adquirir nuevas habilidades y conocimientos para crecer profesionalmente."
+        ],
+        "responses": [
+          "Busca oportunidades de capacitación y desarrollo dentro de tu empresa o en cursos externos.",
+          "Establece metas profesionales claras y crea un plan de acción para alcanzarlas.",
+          "Busca mentores o personas dentro de tu campo que puedan brindarte orientación y apoyo en tu desarrollo profesional."
+        ]
+      },
+      {
+        "tag": "ambiente_trabajo_saludable",
+        "patterns": [
+          "Quiero trabajar en un ambiente que promueva la salud y el bienestar de los empleados.",
+          "Me preocupa el impacto de un ambiente de trabajo estresante en mi salud física y mental.",
+          "Busco un lugar de trabajo que valore el equilibrio entre la vida laboral y personal."
+        ],
+        "responses": [
+          "Busca empresas que tengan políticas y programas que apoyen la salud y el bienestar de los empleados.",
+          "Investiga la cultura de la empresa durante el proceso de entrevista para asegurarte de que se alinee con tus valores y necesidades.",
+          "Prioriza tu salud y bienestar, y no tengas miedo de buscar oportunidades laborales que promuevan un ambiente de trabajo saludable."
+        ]
+      },
+      {
+        "tag": "agradecimiento",
+        "patterns": [
+          "Gracias",
+          "Muchas gracias",
+          "Te agradezco"
+        ],
+        "responses": [
+          "¡De nada! Siempre estoy aquí para ayudar.",
+          "¡No hay de qué! Estoy para ayudarte en lo que necesites.",
+          "¡Gracias a ti por confiar en mí!"
+        ]
+      },
+      {
+        "tag": "ayuda_humana",
+        "patterns": [
+          "Necesito hablar con un humano",
+          "¿Puedo hablar con un representante?",
+          "Quiero hablar con alguien en vivo."
+        ],
+        "responses": [
+          "Claro, te conectaré con uno de nuestros representantes humanos. Por favor, espera un momento.",
+          "Entiendo, déjame transferirte a uno de nuestros representantes para que te pueda ayudar mejor.",
+          "Por supuesto, permíteme conectarte con un miembro de nuestro equipo. Un momento, por favor."
+        ]
+      },
+      {
+        "tag": "teletrabajo",
+        "patterns": [
+          "Me siento desconectado de mis colegas al trabajar desde casa.",
+          "Tengo dificultades para establecer límites entre mi vida personal y laboral mientras teletrabajo.",
+          "Me siento menos productivo trabajando desde casa."
+        ],
+        "responses": [
+          "Programa reuniones virtuales regulares para mantener la conexión con tus colegas.",
+          "Establece un espacio de trabajo dedicado y horarios claros para separar el trabajo de la vida personal.",
+          "Prueba diferentes técnicas de gestión del tiempo para mejorar tu productividad mientras trabajas desde casa."
+        ]
+      },
+      {
+        "tag": "balance_trabajo_vida",
+        "patterns": [
+          "Siento que mi trabajo domina mi vida personal.",
+          "No tengo tiempo para actividades fuera del trabajo debido a mis responsabilidades laborales.",
+          "Me siento culpable cuando dedico tiempo a mi vida personal en lugar de trabajar."
+        ],
+        "responses": [
+          "Establece límites claros entre el trabajo y la vida personal y respétalos.",
+          "Prioriza actividades que te traigan alegría y bienestar fuera del trabajo.",
+          "Recuerda que es importante cuidar tu salud y bienestar fuera del trabajo para ser más efectivo en tu trabajo."
+        ]
+      },
+      {
+        "tag": "desconexión_digital",
+        "patterns": [
+          "Me siento constantemente conectado al trabajo debido a los correos electrónicos y mensajes fuera del horario laboral.",
+          "No puedo desconectar del trabajo debido a la presión para estar siempre disponible.",
+          "Me preocupa perder oportunidades laborales si no estoy siempre disponible en línea."
+        ],
+        "responses": [
+          "Establece horarios específicos para revisar correos electrónicos y mensajes fuera del horario laboral.",
+          "Comunica claramente tus horarios de disponibilidad a tus colegas y supervisores.",
+          "Considera utilizar la función de programación de correos electrónicos para enviar mensajes fuera del horario laboral y evitar interrupciones."
+        ]
+      },
+      {
+        "tag": "autocuidado",
+        "patterns": [
+          "No tengo tiempo para cuidar de mí mismo debido a mis responsabilidades laborales.",
+          "Me siento culpable por dedicar tiempo y recursos a mi propio bienestar.",
+          "Ignoro las señales de agotamiento y estrés en favor de seguir trabajando."
+        ],
+        "responses": [
+          "Haz del autocuidado una prioridad estableciendo rutinas de cuidado personal regularmente.",
+          "Recuerda que cuidar de ti mismo te permite ser más efectivo y saludable en tu trabajo a largo plazo.",
+          "Busca apoyo de amigos, familiares o profesionales de la salud para mantener un estilo de vida equilibrado y saludable."
+        ]
+      },
+      {
+        "tag": "capacitacion",
+        "patterns": [
+          "Siento que mis habilidades laborales están desactualizadas y no puedo avanzar en mi carrera.",
+          "Me gustaría mejorar en ciertas áreas pero no sé cómo hacerlo.",
+          "No recibo suficiente apoyo o recursos para desarrollarme profesionalmente en mi trabajo."
+        ],
+        "responses": [
+          "Busca oportunidades de capacitación y desarrollo ofrecidas por tu empleador o en línea.",
+          "Habla con tu supervisor sobre tus metas de desarrollo profesional y solicita apoyo para alcanzarlas.",
+          "Considera buscar un mentor en tu campo para recibir orientación y apoyo en tu desarrollo profesional."
+        ]
+      },
+      {
+        "tag": "question",
+        "patterns": [
+          "Quiero hacer el test para saber mi nivel de estrés",
+          "Quiero saber mi nivel de estrés",
+          "Quiero mejorar mi estilo de vida ante el estrés",
+          "Hazme el test para mejorar mi nivel de estrés",
+          "Hazme el tests",
+          "Hazme la prueba",
+          "Inicia la prueba",
+          "Quiero el tests de preguntas"
+        ],
+        "responses": [
+          "Ingresa tu edad para saber tu nivel de estrés",
+          "Coloca tu edad",
+          "Dime tu edad",
+          "Dame tu edad",
+          "Escribe tu edad"
+        ]
+      },
+      {
+        "tag": "question_1",
+        "patterns": [
+          "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
+          "Mi edad es", "31", "32", "33", "34", "35", "36", "38", "39", "40", "edad es", "edad"
+        ],
+        "responses": [
+          "¿Cual es tu nivel de satisfacción en el trabajo? (Responde 'bueno' o 'malo')",
+          "¿Cual crees que es tu nivel de satisfacción en el trabajo? (Responde 'sí' o 'no')"
+        ]
+      },
+      {
+        "tag": "question_2",
+        "patterns": [
+          "bueno", 
+          "malo",
+          "pésimo",
+          "puede mejorar",
+          "un poco mejor"
+        ],
+        "responses": [
+          "¿Cuenta usted con programas y recursos de ayuda psicológica? (Responde 'Si cuento con ayuda' o 'No cuento con ayuda')",
+          "¿Está agendando en programas y recursos de ayuda psicológica? (Responde 'Si cuento con ayuda' o 'No cuento con ayuda')",
+          "¿Tiene a su disposición programas y recursos de ayuda psicológica? (Responde 'Si cuento con ayuda' o 'No cuento con ayuda')"
+        ]
+      },
+      {
+        "tag": "question_3",
+        "patterns": [
+          "Si cuento con ayuda",
+          "No cuento con ayuda",
+          "Si con ayuda",
+          "No con ayuda",
+          "No tengo ayuda",
+          "Si tengo ayuda"
+        ],
+        "responses": [
+          "Muchas gracias por realizar el tests",
+          "Muchas gracias por culminar el tests",
+          "Muchas gracias por concluir el tests"
+        ]
+      }
+  ]
