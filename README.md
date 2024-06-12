@@ -2,7 +2,7 @@
 # Titan Network Torch (TNT)
 Es una poderosa Herramienta de Procesamiento del lenguaje natural, aprendizaje por refuerzo, análisis de series temporales, detección de anomalías
 
-## Crear un entorno virtual
+## Crear un entorno virtual (Opcional)
 
 ```bash
   python3 -m venv env
