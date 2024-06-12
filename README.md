@@ -161,5 +161,6 @@ Los responses son un conjunto de respuestas que el modelo puede usar para retona
 	response = ChatBot("config.json")
 ```
 
+## Output
 
 ![Output](resources/output.png)
