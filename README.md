@@ -10,7 +10,7 @@ Es una poderosa Herramienta de Procesamiento del lenguaje natural, aprendizaje p
 ```
 
 
-## Instalar dependicas necesarias
+## Instalar dependencias necesarias
 
 ```bash
   pip install TitanTorch
