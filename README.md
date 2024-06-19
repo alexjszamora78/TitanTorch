@@ -197,11 +197,11 @@ response = ChatBot("config.json")
 
 ## Ejemplo de uso tomando como ejemplo el proyecto 038.
 
-[El Objetivo general](resources/Documento038.docx) del [Proyecto 038](https://docs.google.com/document/d/19p5GTvlgIfiZge67-M-DsKPGMyvppGZ4/edit?usp=sharing&ouid=10297059699375155185&rtpof=true&sd=true) es Desarrollar una plataforma integral de **análisis predictivo** y experiencia de usuario en comercio electrónico que emplee técnicas avanzadas de recopilación y análisis de datos para **predecir** el comportamiento del usuario, ofrecer recomendaciones personalizadas y mejorar la interacción en el sitio web, optimizando así la navegación y la experiencia de compra para aumentar la satisfacción del cliente y potenciar el rendimiento del comercio electrónico.
+El Objetivo general del [Proyecto 038](resources/Documento038.docx) es Desarrollar una plataforma integral de **análisis predictivo** y experiencia de usuario en comercio electrónico que emplee técnicas avanzadas de recopilación y análisis de datos para **predecir** el comportamiento del usuario, ofrecer recomendaciones personalizadas y mejorar la interacción en el sitio web, optimizando así la navegación y la experiencia de compra para aumentar la satisfacción del cliente y potenciar el rendimiento del comercio electrónico.
 
 * Se toma en cuenta que lo que se quiere es predecir, pronosticar y una de las posibles soluciones es la utilización del ChatBot
 
-* Primeramente se tendría que crear la configuración (JSON) correspondiente
+* Primeramente se tendría que crear la configuración (JSON) correspondiente pra entrenar al modelo de aprendizaje
 
 ```json
 [
@@ -217,7 +217,7 @@ response = ChatBot("config.json")
 ]
 ```
 
-* En el tag se debe poner una palabra clave para el uso que se está empleando, en este caso usaré **ventas**
+* En el tag se debe poner una palabra clave para el uso que se está empleando, en este caso se pudiera usar la categoría del profucto o servicio
 
 * El patterns son los gusto o preferencias del usuario que en la tabla de interés aparece como (userInterests) **Intereses del Usuario** 
 
@@ -231,14 +231,236 @@ response = ChatBot("config.json")
 ```json
 [
     {
-      "tag": "ventas",
-      "patterns": [
-        ""
-      ],
-      "responses": [
-      	""
-      ]
-    }
+	  "tag": "tecnologia",
+	  "patterns": [
+	    "teléfonos inteligentes",
+	    "portátiles",
+	    "auriculares inalámbricos",
+	    "altavoces inteligentes",
+	    "tabletas",
+	    "smartwatches",
+	    "cámaras digitales",
+	    "impresoras",
+	    "componentes de PC"
+	  ],
+	  "responses": [
+	    "Teléfono inteligente de última generación con cámara de alta resolución y procesador potente",
+	    "Portátil ultradelgado y ligero con pantalla de alta definición y gran autonomía",
+	    "Auriculares inalámbricos con cancelación de ruido activa y sonido de alta fidelidad",
+	    "Altavoces inteligentes con asistente de voz y conectividad Bluetooth",
+	    "Tablet con pantalla táctil de gran tamaño y sistema operativo Android",
+	    "Smartwatch con funciones de seguimiento de actividad física y notificaciones",
+	    "Cámara digital réflex con objetivo intercambiable y resolución de alta calidad",
+	    "Impresora multifunción con conectividad inalámbrica y capacidad de impresión a doble cara",
+	    "Componentes de PC de alta gama, incluyendo tarjeta gráfica, procesador, memoria RAM y almacenamiento SSD"
+	  ]
+	},
+	{
+	  "tag": "moda",
+	  "patterns": [
+	    "ropa para hombre",
+	    "ropa para mujer",
+	    "zapatos",
+	    "bolsos",
+	    "accesorios",
+	    "ropa deportiva",
+	    "trajes",
+	    "vestidos de fiesta",
+	    "jeans"
+	  ],
+	  "responses": [
+	    "Camisasde algodón con diseños modernos y tallas para todos",
+	    "Pantalones vaqueros ajustados, rectos o acampanados con diferentes lavados",
+	    "Vestidos de verano de algodón fresco y colores vibrantes",
+	    "Zapatos de tacón alto para ocasiones especiales",
+	    "Bolsos de mano para mujer de diferentes tamaños y materiales",
+	    "Ropa deportiva de alta calidad para correr, entrenar o hacer ejercicio",
+	    "Trajes de chaqueta y pantalón elegantes para ocasiones formales",
+	    "Vestidos de fiesta largos o cortos con diseños únicos y elegantes",
+	    "Jeans de diferentes estilos, colores y tallas para hombre y mujer"
+	  ]
+	},
+	{
+	  "tag": "hogar",
+	  "patterns": [
+	    "muebles",
+	    "decoración",
+	    "textiles para el hogar",
+	    "electrodomésticos",
+	    "iluminación",
+	    "artículos de cocina",
+	    "alfombras",
+	    "cortinas",
+	    "cojines"
+	  ],
+	  "responses": [
+	    "Sofá de cuero con diseño moderno y confortable para tu salón",
+	    "Mesa de comedor de madera maciza para 6 personas",
+	    "Lámparas de techo con diseño elegante y funcional para tu habitación",
+	    "Electrodomésticos de última generación como lavavajillas, lavadora y secadora",
+	    "Textiles para el hogar como sábanas, toallas y cortinas de alta calidad",
+	    "Artículos de cocina como ollas, sartenes y cubiertos de acero inoxidable",
+	    "Alfombras de diferentes materiales y estilos para tu hogar",
+	    "Cortinas opacas o translúcidas para controlar la entrada de luz",
+	    "Cojines decorativos con diferentes estampados y tejidos para tu sofá"
+	  ]
+	},
+	{
+	  "tag": "belleza",
+	  "patterns": [
+	    "productos de belleza",
+	    "cosméticos",
+	    "maquillaje",
+	    "cuidado de la piel",
+	    "cuidado del cabello",
+	    "perfumes",
+	    "productos para hombres",
+	    "productos para mujeres"
+	  ],
+	  "responses": [
+	    "Cremas faciales hidratantes y antiedad para todos los tipos de piel",
+	    "Productos de maquillaje de alta calidad como sombras de ojos, labiales y bases",
+	    "Champús y acondicionadores para el cuidado del cabello",
+	    "Perfumes para hombre y mujer con aromas únicos y duraderos",
+	    "Productos para el cuidado personal como desodorantes, jabones y cremas para manos",
+	    "Productos de afeitado para hombres como espuma de afeitar y bálsamos después del afeitado"
+	  ]
+	},
+	{
+	  "tag": "libros",
+	  "patterns": [
+	    "libros de ficción",
+	    "libros de no ficción",
+	    "libros de texto",
+	    "biografías",
+	    "novelas",
+	    "cuentos",
+	    "poesía",
+	    "libros infantiles",
+	    "libros de cocina",
+	    "libros de viajes"
+	  ],
+	  "responses": [
+	    "Novela de misterio y suspense con giros inesperados",
+	    "Biografía de un personaje histórico fascinante",
+	    "Libro de cocina con recetas deliciosas y fáciles de seguir",
+	    "Libro de viajes con consejos y recomendaciones para explorar el mundo",
+	    "Libro infantil con ilustraciones coloridas e historias encantadoras",
+	    "Libro de no ficción sobre un tema interesante y actual",
+	    "Libro de texto para estudiantes de primaria, secundaria o universidad",
+	    "Poesía contemporánea con versos emotivos y reflexivos",
+	    "Colección de cuentos clásicos con moralejas para todos",
+	    "Libro de autoayuda con consejos prácticos para mejorar tu vida"
+	  ]
+	},
+	{
+	  "tag": "viajes",
+	  "patterns": [
+	    "vuelos",
+	    "hoteles",
+	    "alojamientos",
+	    "cruceros",
+	    "viajes en tren",
+	    "tours",
+	    "paquetes vacacionales",
+	    "rent a car",
+	    "seguros de viaje",
+	    "actividades turísticas"
+	  ],
+	  "responses": [
+	    "Vuelos baratos a destinos nacionales e internacionales",
+	    "Hoteles de lujo, boutique o económicos en diferentes ciudades",
+	    "Alojamientos alternativos como apartamentos, villas o casas rurales",
+	    "Cruceros por el Mediterráneo, Caribe o Alaska",
+	    "Viajes en tren panorámicos por Europa",
+	    "Tours guiados por las principales ciudades del mundo",
+	    "Paquetes vacacionales personalizados para todos los gustos y presupuestos",
+	    "Rent a car con diferentes modelos de vehículos",
+	    "Seguros de viaje para cubrir imprevistos",
+	    "Actividades turísticas como museos, parques temáticos o excursiones"
+	  ]
+	},
+	{
+	  "tag": "deportes",
+	  "patterns": [
+	    "ropa deportiva",
+	    "calzado deportivo",
+	    "accesorios deportivos",
+	    "equipamiento deportivo",
+	    "suscripciones a gimnasios",
+	    "clases de fitness",
+	    "material para deportes de equipo",
+	    "material para deportes individuales",
+	    "nutrición deportiva",
+	    "complementos deportivos"
+	  ],
+	  "responses": [
+	    "Ropa deportiva de alta calidad para correr, entrenar o hacer ejercicio",
+	    "Calzado deportivo cómodo y resistente para diferentes disciplinas",
+	    "Accesorios deportivos como relojes inteligentes, auriculares inalámbricos y cintas para el sudor",
+	    "Equipamiento deportivo para gimnasio, yoga, pilates o entrenamiento en casa",
+	    "Suscripciones a gimnasios con acceso a diferentes actividades",
+	    "Clases de fitness como spinning, zumba o crossfit",
+	    "Material para deportes de equipo como fútbol, baloncesto o voleibol",
+	    "Material para deportes individuales como tenis, golf o natación",
+	    "Nutrición deportiva para optimizar el rendimiento",
+	    "Complementos deportivos para aumentar la energía, la fuerza o la recuperación"
+	  ]
+	},
+	{
+	  "tag": "entretenimiento",
+	  "patterns": [
+	    "películas",
+	    "series de televisión",
+	    "música",
+	    "videojuegos",
+	    "consolas de videojuegos",
+	    "libros de cómics",
+	    "entradas para eventos",
+	    "instrumentos musicales",
+	    "material de dibujo",
+	    "juegos de mesa"
+	  ],
+	  "responses": [
+	    "Películas de estreno en cine o en streaming",
+	    "Series de televisión de diferentes géneros como drama, comedia o ciencia ficción",
+	    "Música de todos los estilos, desde pop hasta rock o clásica",
+	    "Videojuegos para PC, consola o móvil",
+	    "Consolas de videojuegos de última generación como Playstation 5 o Xbox Series X",
+	    "Libros de cómics de superhéroes, manga o novela gráfica",
+	    "Entradas para conciertos, espectáculos teatrales o eventos deportivos",
+	    "Instrumentos musicales como guitarras, pianos o baterías",
+	    "Material de dibujo como lápices, colores, acuarelas o pinceles",
+	    "Juegos de mesa para todas las edades, desde clásicos hasta modernos"
+	  ]
+	},
+	{
+	  "tag": "mascotas",
+	  "patterns": [
+	    "comida para mascotas",
+	    "accesorios para mascotas",
+	    "productos de higiene para mascotas",
+	    "juguetes para mascotas",
+	    "ropa para mascotas",
+	    "camas para mascotas",
+	    "servicios veterinarios",
+	    "adopción de mascotas",
+	    "cuidado de mascotas",
+	    "adiestramiento de mascotas"
+	  ],
+	  "responses": [
+	    "Comida para perros, gatos, conejos u otras mascotas",
+	    "Accesorios para mascotas como collares, correas, arneses o transportines",
+	    "Productos de higiene para mascotas como champús, cepillos o peines",
+	    "Juguetes para mascotas de diferentes tamaños y materiales",
+	    "Ropa para mascotas como abrigos, jerseys o impermeables",
+	    "Camas para mascotas de diferentes tamaños y diseños",
+	    "Servicios veterinarios como consultas, vacunas o cirugías",
+	    "Adopción de mascotas de refugios o protectoras",
+	    "Cuidado de mascotas a domicilio o en residencias",
+	    "Adiestramiento de mascotas para corregir comportamientos y mejorar la convivencia"
+	  ]
+	}
 ]
 ```
 
