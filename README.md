@@ -4,11 +4,18 @@ Es una poderosa Herramienta de Procesamiento del lenguaje natural, aprendizaje p
 
 ## Versión 1.0
 
-## Crear un entorno virtual (Opcional)
+## Crear un entorno virtual (Linux)
 
 ```bash
-python3 -m venv env
+python -m venv env
 source env/bin/active
+```
+
+## Crear un entorno virtual (Windows)
+
+```bash
+python -m venv env
+env\Scripts\activate.bat
 ```
 
 
