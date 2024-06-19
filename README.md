@@ -477,3 +477,8 @@ response = ChatBot("config.json")
 ## Output
 
 ![Output](resources/output2.png)
+
+
+## Información para Desarrolladores (DEV)
+
+* [Aquí pueden ver el código fuente con que fue creado la librería TitanTorch](resources/main.py)
