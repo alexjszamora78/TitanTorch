@@ -193,3 +193,65 @@ response = ChatBot("config.json")
 * **Entretenimientos:** Para jugar juegos, contar historias, dar predicciones de gustos sobre las mejores o peores (mediante un filtro) películas y libros, etc.
 
 * **Gestión de redes sociales:** Para responder a los mensajes, publicar contenido, analizar datos, etc.
+
+
+## Ejemplo de uso tomando como ejemplo el proyecto 038.
+
+[El Objetivo general](resources/Documento038.docx) del [Proyecto 038](https://docs.google.com/document/d/19p5GTvlgIfiZge67-M-DsKPGMyvppGZ4/edit?usp=sharing&ouid=10297059699375155185&rtpof=true&sd=true) es Desarrollar una plataforma integral de **análisis predictivo** y experiencia de usuario en comercio electrónico que emplee técnicas avanzadas de recopilación y análisis de datos para **predecir** el comportamiento del usuario, ofrecer recomendaciones personalizadas y mejorar la interacción en el sitio web, optimizando así la navegación y la experiencia de compra para aumentar la satisfacción del cliente y potenciar el rendimiento del comercio electrónico.
+
+* Se toma en cuenta que lo que se quiere es predecir, pronosticar y una de las posibles soluciones es la utilización del ChatBot
+
+* Primeramente se tendría que crear la configuración (JSON) correspondiente
+
+```json
+[
+    {
+      "tag": ...,
+      "patterns": [
+        ...
+      ],
+      "responses": [
+        ...
+      ]
+    }
+]
+```
+
+* En el tag se debe poner una palabra clave para el uso que se está empleando, en este caso usaré **ventas**
+
+* El patterns son los gusto o preferencias del usuario que en la tabla de interés aparece como (userInterests) **Intereses del Usuario** 
+
+* Los respondes son productos o servicios que está brindando la Empresa y que en la tabla de interés aprece como (comProducts) y (comServices) respectivamente
+
+* Solo quedaría pasar esos valores proporciondos por el grupo de Scrapping para el config.json
+
+
+## Ejemplo del config.json con los datos proporciondos por el grupo de Scrapping
+
+```json
+[
+    {
+      "tag": "ventas",
+      "patterns": [
+        ""
+      ],
+      "responses": [
+      	""
+      ]
+    }
+]
+```
+
+
+## Ejecución de la prueba 038
+
+```python
+from TitanTorch import ChatBot
+
+response = ChatBot("config.json")
+```
+
+
+## Output
+
+![Output](resources/output2.png)
